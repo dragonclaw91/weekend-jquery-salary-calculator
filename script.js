@@ -55,7 +55,7 @@ function addEmployee(employees) {
     };
 
     // takes the global sum and updates the total monthly variable and appends it the th DOM
-    totalMonthly += sum;
+    totalMonthly += sum/12;
     $("#totalSum").text(totalMonthly);
     /* sets it up so the if ttotal monthly gets over 20k
      it colors the text red to alert the user to over spending */
