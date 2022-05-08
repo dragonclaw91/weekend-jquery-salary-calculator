@@ -1,0 +1,16 @@
+body{
+    background-color: beige;
+}
+
+.danger {
+    background-color: red;
+}
+
+table{
+    border: 1px solid black;
+    width: 100%
+}
+
+td ,th{
+    text-align: center;
+}

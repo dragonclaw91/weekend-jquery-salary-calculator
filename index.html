@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "jquery.js"></script>
+    <script src = "script.js"></script>
+    <link rel = "stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>salary calaculator</h1>
+        </header>
+        <h1> add employee </h1>
+        <div>
+            <input placeholder = "First Name" id="firstName" />
+            <input placeholder = "Last Name" id="lastName"/>
+            <input placeholder = "ID" id="id"/>
+            <input placeholder = "Title" id="title" />
+            <input placeholder = "Annual Salary" id = "annualSalary" type = "number"/>
+        </div>
+        <button id="submittButton" >submitt</button>
+        <div>
+            <h1>emploees</h1>
+            <table>
+                <tableh>
+                    <tr>
+                        <th> first name </th>
+                        <th> last name </th>
+                        <th> ID </th>
+                        <th> title </th>
+                        <th> Annual Salary </th>
+                        <th></th>
+                    </tr>
+                </tableh>
+                <tbody id="tableBody" >
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            
+                <h1>
+                   <p>total monthly:<span id="totalSum" ></span></p>
+                </h1>
+            
+        </footer>
+    </main>
+</body>
+
+</html>
