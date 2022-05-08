@@ -1,6 +1,6 @@
 console.log("good to go");
 
-// create a redy on function for jquery
+// create a ready on function for jquery
 
 $(document).ready(readyOn)
 
@@ -15,14 +15,14 @@ function readyOn() {
             lName: $("#lastName").val(),
             ID: $("#id").val(),
             title: $("#title").val(),
-            annualSalary: $("#annualSalary").val(),
+            monthlySalary: $("#monthlySalary").val(),
         });
         // this will clear the input fields after the submit button is clicked
         $("#firstName").val("")
         $("#lastName").val("")
         $("#id").val("")
         $("#title").val("")
-        $("#annualSalary").val("")
+        $("#monthlySalary").val("")
         addEmployee(employee);
     });
     /* attaching a listner to to the table body so when the delete button is clicked it 
@@ -49,9 +49,9 @@ function addEmployee(employees) {
         $("#tableBody").append(
             `<tr><td>` + employees[i].fName + `</td><td>` + employees[i].lName
             + `</td><td>` + employees[i].ID + `</td><td>` + employees[i].title
-            + `</td><td>` + employees[i].annualSalary + `</td><td>`
+            + `</td><td>` + employees[i].monthlySalary + `</td><td>`
             + `<button id = "delete"> delete </button></td></tr>`);
-        sum = Number(employees[i].annualSalary)
+        sum = Number(employees[i].monthlySalary)
     };
 
     // takes the global sum and updates the total monthly variable and appends it the th DOM
